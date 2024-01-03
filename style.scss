@@ -1,3 +1,5 @@
+// ------------------------ GLOBAL ------------------------
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 $background-color: #f0f0f0;
@@ -28,6 +30,42 @@ body {
     fill: $text-color;
 }
 
+// ------------------------ IMG SECTION ------------------------
+
+.img__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 90rem;
+    height: 90rem;
+    position: absolute;
+    top: -45rem;
+    left: -45rem;
+    border-radius: 100%;
+}
+
+.img__box {
+    background-color: $background-color;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 100%;
+    box-shadow: 10px 10px 28px #cccccc,
+    -10px -10px 28px #ffffff;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 22rem;
+        background-color: transparent;
+    }
+}
+
+// ------------------------ TEXT SECTION ------------------------
+
 .text__cotainer {
     align-self: center;
     justify-self: start;
@@ -57,44 +95,10 @@ body {
     }
 }
 
-.img__container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    width: 90rem;
-    height: 90rem;
-    position: absolute;
-    top: -45rem;
-    left: -45rem;
-    border-radius: 100%;
-    animation: move 2s ease-in-out 1 forwards; 
-    // transform: rotate(270deg);
-}
-
-.img__box {
-    background-color: $background-color;
-    height: 30rem;
-    width: 30rem;
-    border-radius: 100%;
-    box-shadow: 10px 10px 28px #cccccc,
-    -10px -10px 28px #ffffff;
-    align-self: center;
-    justify-self: center;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-        height: 22rem;
-        background-color: transparent;
-    }
-}
+// ------------------------ INFORMATION SECTION ------------------------
 
 .information__container {
     align-self: center;
-    // box-shadow: 1.5rem 2.5rem 7rem #c6c2c2,
-    // -3.5rem -3.5rem 7rem #ffffff;
     box-shadow: 10px 10px 25px #cccccc,
     -10px -10px 25px #ffffff;
     border-radius: 10%;
@@ -121,6 +125,8 @@ body {
         font-size: 1.4rem;
     }
 }
+
+// ------------------------ BTN ------------------------
 
 .btn {
     box-shadow: 5px 5px 10px #cdc9c9,
@@ -175,9 +181,7 @@ body {
     }
 }
 
-.hover:hover {
-    transform: scale(1.1);
-}
+// ------------------------ NAV SECTION ------------------------
 
 .nav__container {
 
@@ -251,9 +255,6 @@ body {
     }
 }
 
-
-@keyframes move {
-    to {
-        transform: rotate(270deg);
-    }
+.hover:hover {
+    transform: scale(1.1);
 }

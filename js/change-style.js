@@ -13,15 +13,11 @@ for (let i = 0; i < selectorList.length; i++) {
 
     const border = borderList[i];
 
-    // function changeShadow() {
-
-    //     selector.style.boxShadow = 'inset 10px 10px 15px #cdc9c9, inset -10px -10px 15px #ffffff';
-    // }
-
     function changeStyle() {
 
         selector.style.boxShadow = 'inset 10px 10px 15px #cdc9c9, inset -10px -10px 15px #ffffff';
         selector.classList.remove('hover')
+        selector.style.cursor = 'default'
         border.style.opacity = 1
 
         selectorArray.splice(i,1)
@@ -29,6 +25,7 @@ for (let i = 0; i < selectorList.length; i++) {
         selectorArray.forEach((element) => {
             element.style.boxShadow = '10px 10px 15px #cdc9c9, -10px -10px 15px #ffffff';
             element.classList.add('hover')
+            element.style.cursor = 'pointer'
 
             console.log(selectorArray)
         })
