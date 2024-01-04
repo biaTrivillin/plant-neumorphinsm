@@ -78,6 +78,11 @@ body {
   background-color: transparent;
 }
 
+.text__selector__two, .text__selector__three, .text__selector__four {
+  display: none;
+  opacity: 0;
+}
+
 .information__container {
   align-self: center;
   box-shadow: 10px 10px 25px #cccccc, -10px -10px 25px #ffffff;

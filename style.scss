@@ -95,6 +95,11 @@ body {
     }
 }
 
+.text__selector__two, .text__selector__three, .text__selector__four {
+    display: none;
+    opacity: 0;
+}
+
 // ------------------------ INFORMATION SECTION ------------------------
 
 .information__container {
