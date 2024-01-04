@@ -131,6 +131,14 @@ body {
     }
 }
 
+.information__selector__two, .information__selector__three, .information__selector__four {
+    display: none;
+}
+
+.care__level__selector__two, .care__level__selector__three, .care__level__selector__four{
+    opacity: 0;
+}
+
 // ------------------------ BTN ------------------------
 
 .btn {

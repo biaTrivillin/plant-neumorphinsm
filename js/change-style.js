@@ -27,7 +27,6 @@ for (let i = 0; i < selectorList.length; i++) {
             element.classList.add('hover')
             element.style.cursor = 'pointer'
 
-            console.log(selectorArray)
         })
 
         borderArray.splice(i,1)

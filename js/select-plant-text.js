@@ -12,7 +12,7 @@ for (let i = 0; i < selectorList.length; i++) {
 
     const text = document.querySelector(`.text__${selector.classList[1]}`);
 
-    function rotate() {
+    function changeText() {
 
         text.style.display = 'block'
 
@@ -32,13 +32,26 @@ for (let i = 0; i < selectorList.length; i++) {
         textArray.splice(i,1)
 
         textArray.forEach((element) => {
-            element.style.opacity = 0;
+
+            element.animate(
+                [
+                    { opacity: 0 },
+                ],
+        
+                {
+                    duration: 2000,
+                    iterations: 1,
+                    fill: 'forwards',
+                    easing: 'ease-in-out'
+                },
+            )
+
             element.style.display = 'none';
         })
 
         textArray = Array.from(textList);
     }
 
-    selector.addEventListener('click', rotate)
+    selector.addEventListener('click', changeText)
 
 }

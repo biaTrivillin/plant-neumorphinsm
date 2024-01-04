@@ -1,7 +1,5 @@
 const selectorList = document.querySelectorAll('.selector');
 
-let selectorArray = Array.from(selectorList);
-
 const imageBox = document.querySelector('.img__container')
 
 for (let i = 0; i < selectorList.length; i++) {
