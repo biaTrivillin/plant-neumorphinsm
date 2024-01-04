@@ -33,6 +33,15 @@ body {
   left: -45rem;
   border-radius: 100%;
 }
+.img__container .img__two {
+  transform: rotate(-90deg);
+}
+.img__container .img__three {
+  transform: rotate(90deg);
+}
+.img__container .img__one {
+  transform: rotate(180deg);
+}
 
 .img__box {
   background-color: #f0f0f0;
@@ -78,8 +87,16 @@ body {
   background-color: transparent;
 }
 
+.text__information {
+  background-color: transparent;
+}
+
 .text__selector__two, .text__selector__three, .text__selector__four {
   display: none;
+  opacity: 0;
+}
+
+.care__information__selector__two, .care__information__selector__three, .care__information__selector__four {
   opacity: 0;
 }
 
@@ -113,8 +130,11 @@ body {
   display: none;
 }
 
-.care__level__selector__two, .care__level__selector__three, .care__level__selector__four {
-  opacity: 0;
+.care__information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
 .btn {

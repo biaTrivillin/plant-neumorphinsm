@@ -42,6 +42,18 @@ body {
     top: -45rem;
     left: -45rem;
     border-radius: 100%;
+
+    .img__two{
+        transform: rotate(-90deg);
+    }
+
+    .img__three{
+        transform: rotate(90deg);
+    }
+
+    .img__one{
+        transform: rotate(180deg);
+    }
 }
 
 .img__box {
@@ -95,8 +107,16 @@ body {
     }
 }
 
+.text__information {
+    background-color: transparent;
+}
+
 .text__selector__two, .text__selector__three, .text__selector__four {
     display: none;
+    opacity: 0;
+}
+
+.care__information__selector__two, .care__information__selector__three, .care__information__selector__four {
     opacity: 0;
 }
 
@@ -135,8 +155,12 @@ body {
     display: none;
 }
 
-.care__level__selector__two, .care__level__selector__three, .care__level__selector__four{
-    opacity: 0;
+.care__information {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    
 }
 
 // ------------------------ BTN ------------------------

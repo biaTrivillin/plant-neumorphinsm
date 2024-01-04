@@ -1,15 +1,15 @@
-const selectorList = document.querySelectorAll('.selector');
+const selectList = document.querySelectorAll('.selector');
 
 const borderList = document.querySelectorAll('.border');
 
-let selectorArray = Array.from(selectorList);
+let selectorArray = Array.from(selectList);
 
 let borderArray = Array.from(borderList);
 
 
-for (let i = 0; i < selectorList.length; i++) {
+for (let i = 0; i < selectList.length; i++) {
 
-    const selector = selectorList[i];
+    const selector = selectList[i];
 
     const border = borderList[i];
 
@@ -35,7 +35,7 @@ for (let i = 0; i < selectorList.length; i++) {
             element.style.opacity = 0;
         })
 
-        selectorArray = Array.from(selectorList)
+        selectorArray = Array.from(selectList)
         borderArray = Array.from(borderList)
 
     }
