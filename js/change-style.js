@@ -18,12 +18,36 @@ for (let i = 0; i < selectList.length; i++) {
         selector.style.boxShadow = 'inset 10px 10px 15px #cdc9c9, inset -10px -10px 15px #ffffff';
         selector.style.cursor = 'default'
         border.style.opacity = 1
+        selector.animate(
+            [
+                { transform: 'scale(0.95)'},
+            ],
+    
+            {
+                duration: 50,
+                iterations: 1,
+                fill: 'forwards',
+                easing: 'ease-in-out'
+            },
+        )
 
         selectorArray.splice(i,1)
 
         selectorArray.forEach((element) => {
             element.style.boxShadow = '10px 10px 15px #cdc9c9, -10px -10px 15px #ffffff';
             element.style.cursor = 'pointer'
+            element.animate(
+                [
+                    { transform: 'scale(1)'},
+                ],
+        
+                {
+                    duration: 50,
+                    iterations: 1,
+                    fill: 'forwards',
+                    easing: 'ease-in-out'
+                },
+            )
 
         })
 
