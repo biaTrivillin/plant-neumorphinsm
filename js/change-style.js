@@ -16,7 +16,6 @@ for (let i = 0; i < selectList.length; i++) {
     function changeStyle() {
 
         selector.style.boxShadow = 'inset 10px 10px 15px #cdc9c9, inset -10px -10px 15px #ffffff';
-        selector.classList.remove('hover')
         selector.style.cursor = 'default'
         border.style.opacity = 1
 
@@ -24,7 +23,6 @@ for (let i = 0; i < selectList.length; i++) {
 
         selectorArray.forEach((element) => {
             element.style.boxShadow = '10px 10px 15px #cdc9c9, -10px -10px 15px #ffffff';
-            element.classList.add('hover')
             element.style.cursor = 'pointer'
 
         })

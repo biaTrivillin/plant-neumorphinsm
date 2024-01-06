@@ -1,6 +1,7 @@
 // ------------------------ GLOBAL ------------------------
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url(animations.scss);
 
 $background-color: #f0f0f0;
 $principal-font: 'Lato', sans-serif;
@@ -42,6 +43,8 @@ body {
     top: -45rem;
     left: -45rem;
     border-radius: 100%;
+    opacity: 0;
+    animation: appear 2s ease-in-out 1s 1 forwards;
 
     .img__two{
         transform: rotate(-90deg);
@@ -49,6 +52,10 @@ body {
 
     .img__three{
         transform: rotate(90deg);
+
+        img {
+            height: 30rem;
+        }
     }
 
     .img__one{
@@ -86,6 +93,8 @@ body {
     margin-top: 5rem;
     z-index: 1;
     background-color: transparent;
+    opacity: 0;
+    animation: appear 2s ease-in-out 0.5s 1 forwards;
     
     h1 {
         font-size: 5rem;
@@ -117,6 +126,10 @@ body {
 }
 
 .care__information__selector__two, .care__information__selector__three, .care__information__selector__four {
+    opacity: 0;
+}
+
+.care__level__selector__two, .care__level__selector__three, .care__level__selector__four{
     opacity: 0;
 }
 
@@ -161,6 +174,11 @@ body {
     align-items: center;
     gap: 3rem;
     
+}
+
+.information__section {
+    opacity: 0;
+    animation: appear 1s ease-in-out 1s 1 forwards;
 }
 
 // ------------------------ BTN ------------------------
@@ -222,7 +240,7 @@ body {
 
 .nav__container {
 
-    align-self: center;
+    align-self: end;
 
     ul {
         display: flex;
@@ -244,7 +262,7 @@ body {
         align-items: center;
         justify-content: center;
         position: relative;
-        margin: 1rem;
+        animation: slide-up 1s ease-in 1 forwards;
 
         &::after {
             content: "";
@@ -292,6 +310,6 @@ body {
     }
 }
 
-.hover:hover {
-    transform: scale(1.1);
+::-webkit-scrollbar {
+    width: 0px;
 }

@@ -1,0 +1,29 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes is-getting-bigger {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-5rem);
+    opacity: 1;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=animations.css.map */
