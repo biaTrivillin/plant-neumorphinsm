@@ -6,7 +6,7 @@
 <img align="center" src="assets/preview-plant.gif" width="700px">
 <br>
 
-## Staks used in the project
+## Stacks used in the project
 <div style="display: inline_block"><br>
   <img align="center" alt="bia-js" height="40" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img>
