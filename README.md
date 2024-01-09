@@ -3,9 +3,8 @@
 <br>
 
 ## Preview
-<div align="center">
-  <img align="center" src="assets/preview-plant.gif" width="700px">
-</div> <br>
+<img align="center" src="assets/preview-plant.gif" width="700px">
+<br>
 
 ## Technologies used in the project
 <div style="display: inline_block"><br>
