@@ -1,12 +1,12 @@
 const selectorList = document.querySelectorAll('.selector');
 
-const imageBox = document.querySelector('.img__container')
+const imageBox = document.querySelector('.img__container');
 
 for (let i = 0; i < selectorList.length; i++) {
 
     const selector = selectorList[i];
 
-    let deg = i * 90
+    let deg = i * 90;
 
     function rotate() {
 
@@ -24,6 +24,6 @@ for (let i = 0; i < selectorList.length; i++) {
         )
     }
 
-    selector.addEventListener('click', rotate)
+    selector.addEventListener('click', rotate);
 
 }

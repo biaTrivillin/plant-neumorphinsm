@@ -14,7 +14,7 @@ for (let i = 0; i < selectorList.length; i++) {
 
     function changeText() {
 
-        text.style.display = 'block'
+        text.style.display = 'block';
 
         text.animate(
             [
@@ -29,7 +29,7 @@ for (let i = 0; i < selectorList.length; i++) {
             },
         )
 
-        textArray.splice(i,1)
+        textArray.splice(i,1);
 
         textArray.forEach((element) => {
 
@@ -52,6 +52,6 @@ for (let i = 0; i < selectorList.length; i++) {
         textArray = Array.from(textList);
     }
 
-    selector.addEventListener('click', changeText)
+    selector.addEventListener('click', changeText);
 
 }

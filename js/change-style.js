@@ -16,8 +16,8 @@ for (let i = 0; i < selectList.length; i++) {
     function changeStyle() {
 
         selector.style.boxShadow = 'inset 10px 10px 15px #cdc9c9, inset -10px -10px 15px #ffffff';
-        selector.style.cursor = 'default'
-        border.style.opacity = 1
+        selector.style.cursor = 'default';
+        border.style.opacity = 1;
         selector.animate(
             [
                 { transform: 'scale(0.95)'},
@@ -31,11 +31,11 @@ for (let i = 0; i < selectList.length; i++) {
             },
         )
 
-        selectorArray.splice(i,1)
+        selectorArray.splice(i,1);
 
         selectorArray.forEach((element) => {
             element.style.boxShadow = '10px 10px 15px #cdc9c9, -10px -10px 15px #ffffff';
-            element.style.cursor = 'pointer'
+            element.style.cursor = 'pointer';
             element.animate(
                 [
                     { transform: 'scale(1)'},
@@ -51,16 +51,16 @@ for (let i = 0; i < selectList.length; i++) {
 
         })
 
-        borderArray.splice(i,1)
+        borderArray.splice(i,1);
 
         borderArray.forEach((element) => {
             element.style.opacity = 0;
         })
 
-        selectorArray = Array.from(selectList)
-        borderArray = Array.from(borderList)
+        selectorArray = Array.from(selectList);
+        borderArray = Array.from(borderList);
 
     }
     
-    selector.addEventListener('click', changeStyle)
+    selector.addEventListener('click', changeStyle);
 }

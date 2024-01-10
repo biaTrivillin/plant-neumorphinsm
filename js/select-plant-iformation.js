@@ -2,9 +2,9 @@ const selectorList = document.querySelectorAll('.selector');
 
 const informationList = document.querySelectorAll('.information__container');
 
-const careLevelList = document.querySelectorAll('.care__level')
+const careLevelList = document.querySelectorAll('.care__level');
 
-const careInformationList = document.querySelectorAll('.care__information')
+const careInformationList = document.querySelectorAll('.care__information');
 
 let selectorArray = Array.from(selectorList);
 
@@ -12,7 +12,7 @@ let informationArray = Array.from(informationList);
 
 let careArray = Array.from(careLevelList);
 
-let careInformArray = Array.from(careInformationList)
+let careInformArray = Array.from(careInformationList);
 
 for (let i = 0; i < selectorList.length; i++) {
 
@@ -20,15 +20,15 @@ for (let i = 0; i < selectorList.length; i++) {
 
     const information = document.querySelector(`.information__${selector.classList[1]}`);
 
-    const careLevel = document.querySelector(`.care__level__${selector.classList[1]}`)
+    const careLevel = document.querySelector(`.care__level__${selector.classList[1]}`);
 
-    const careInformation = document.querySelector(`.care__information__${selector.classList[1]}`)
+    const careInformation = document.querySelector(`.care__information__${selector.classList[1]}`);
 
     function changeInformation() {
 
-        information.style.display = 'flex'
+        information.style.display = 'flex';
 
-        informationArray.splice(i,1)
+        informationArray.splice(i,1);
 
         informationArray.forEach((element) => {
             element.style.display = 'none';
@@ -52,7 +52,7 @@ for (let i = 0; i < selectorList.length; i++) {
             },
         )
 
-        careArray.splice(i,1)
+        careArray.splice(i,1);
 
         careArray.forEach((element) => {
 
@@ -71,7 +71,7 @@ for (let i = 0; i < selectorList.length; i++) {
 
         })
 
-        careArray = Array.from(careLevelList)
+        careArray = Array.from(careLevelList);
 
     }
 
@@ -95,7 +95,7 @@ for (let i = 0; i < selectorList.length; i++) {
 
         
 
-        careInformArray.splice(i,1)
+        careInformArray.splice(i,1);
 
         careInformArray.forEach((element) => {
 
@@ -114,7 +114,7 @@ for (let i = 0; i < selectorList.length; i++) {
 
         })
 
-        careInformArray = Array.from(careInformationList)
+        careInformArray = Array.from(careInformationList);
 
     }
 
@@ -124,7 +124,7 @@ for (let i = 0; i < selectorList.length; i++) {
         informationAnimation()
     }
 
-    selector.addEventListener('click', selectInformation)
+    selector.addEventListener('click', selectInformation);
 
 }
 
